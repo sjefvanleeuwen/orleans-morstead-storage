@@ -1,2 +1,2 @@
-# orleans-faster
-FASTER Storage provider for Microsoft Orleans
+# orleans-morstead
+Morstead Storage provider for Microsoft Orleans
