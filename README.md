@@ -2,6 +2,8 @@
 
 ![morstead](./doc/img/morstead.svg)
 
+[![nuget](https://img.shields.io/nuget/v/Orleans.Persistence.Morstead)](https://www.nuget.org/packages/Orleans.Persistence.Morstead/)
+
 ## What is it?
 
 An embedded persistent storage provider for Microsoft Orleans for development purposes. It is based on LiteDB. Currently targeted to Developers that seek simple persistent storage as an 'in place' replacement for volatile memory storage that is shipped with Orleans.
