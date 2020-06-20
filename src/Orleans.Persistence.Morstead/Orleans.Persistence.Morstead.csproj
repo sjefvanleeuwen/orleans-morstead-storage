@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -21,7 +21,7 @@
     <Copyright>Copyright (c) 2020 Sjef van Leeuwen</Copyright>
     <PackageIcon>morstead-emblem-512.png</PackageIcon>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageVersion>0.0.1-alpha</PackageVersion>
+    <PackageVersion>0.0.2-alpha</PackageVersion>
     <PackageReleaseNotes>In alpha stage but should be usable, please check project page for current status.</PackageReleaseNotes>
   </PropertyGroup>
 
