@@ -11,12 +11,6 @@ namespace Orleans.Configuration
     public class MorsteadStorageOptions
     {
         /// <summary>
-        /// Azure connection string
-        /// </summary>
-        [RedactConnectionString]
-        public string ConnectionString { get; set; }
-
-        /// <summary>
         /// Container name where grain stage is stored
         /// TODO: What is the equivalent in Morstead
         /// </summary>
