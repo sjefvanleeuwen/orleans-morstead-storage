@@ -135,7 +135,7 @@ namespace Orleans.Storage
                 {
                     db = new LiteDatabase(this.name);
                     await Task.Run(() => grains = db.GetCollection<MorsteadGrainStorageModel>("grains"));
-                    //grains.EnsureIndex(x => x.ETag);
+                    grains.EnsureIndex(x => x.ETag);
                     dbs.Add(name, db);
                 }
                 else
