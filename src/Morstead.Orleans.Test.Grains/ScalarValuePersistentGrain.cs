@@ -15,7 +15,7 @@ namespace Morstead.Orleans.Test.Grains
         }
         public async Task<T> GetScalarValue()
         {
-            return await Task.Run(() => { return Scalar.State.Value; });
+            return await Task.FromResult(Scalar.State.Value);
         }
 
         public async Task SetScalarValue(T value)
