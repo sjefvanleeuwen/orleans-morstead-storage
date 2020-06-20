@@ -51,7 +51,7 @@ namespace Orleans.Configuration
 
         public void ValidateConfiguration()
         {
-            throw new NotImplementedException();
+            // no validation at the moment.
         }
     }
 }
