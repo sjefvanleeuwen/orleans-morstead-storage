@@ -2,11 +2,41 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>Orleans.Persistence.Morstead</PackageId>
+    <Authors>Sjef van Leeuwen</Authors>
+    <Company>Morstead</Company>
+    <Product>Morstead Orleans</Product>
+    <PackageProjectUrl>https://github.com/sjefvanleeuwen/orleans-morstead-storage</PackageProjectUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/sjefvanleeuwen/orleans-morstead-storage</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>Microsoft Orleans LiteDB</PackageTags>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Title>Morstead Orleans Storage Providers</Title>
+    <Description>Embedded persistent storage provider for Microsoft Orleans for development purposes. It is based on LiteDB. Currently targeted to Developers that seek simple persistent storage as an 'in place' replacement for volatile memory storage that is shipped with Orleans.</Description>
+    <NeutralLanguage></NeutralLanguage>
+    <Copyright>Copyright (c) 2020 Sjef van Leeuwen</Copyright>
+    <PackageIcon>morstead-emblem-512.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageVersion>0.0.1-alpha</PackageVersion>
+    <PackageReleaseNotes>In alpha stage but should be usable, please check project page for current status.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="LiteDB" Version="5.0.8" />
     <PackageReference Include="Microsoft.Orleans.Runtime.Abstractions" Version="3.2.0" />
   </ItemGroup>
-
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\doc\img\morstead-emblem-512.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
