@@ -16,5 +16,6 @@
         MorsteadProvider_DeleteError = MorsteadProviderBase + 8,
         MorsteadProvider_InitProvider = MorsteadProviderBase + 9,
         MorsteadProvider_ParamConnectionString = MorsteadProviderBase + 10,
+        MorsteadProvider_DatabaseNotFound = MorsteadProviderBase +11
     }
 }
