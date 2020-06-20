@@ -36,7 +36,7 @@ The setup comparable to other orleans storage providers and is build using .NET 
 ### Install nuget package
 
 ```
-dotnet add package Orleans.Persistence.Morstead --version 0.0.2-alpha
+dotnet add package Orleans.Persistence.Morstead --version 0.0.3-alpha
 ```
 or visit the nuget for other options on: https://www.nuget.org/packages/Orleans.Persistence.Morstead
 
