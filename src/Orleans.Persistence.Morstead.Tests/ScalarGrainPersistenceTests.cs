@@ -14,9 +14,15 @@ namespace Orleans.Persistence.Morstead.Tests
         }
 
         [Fact]
-        public void CanWriteAndReadStringValueType()
+        public async void CanWriteAndReadStringValueType()
         {
             var sut = cluster.GrainFactory.GetGrain<IScalarValuePersistentGrain<string>>(1);
+            await sut.SetScalarValue("Hello World!");
+            Assert.Equal("Hello World!", await sut.GetScalarValue());
+
+            sut = cluster.GrainFactory.GetGrain<IScalarValuePersistentGrain<string>>(2);
+            await sut.SetScalarValue("Hello World! 2");
+            Assert.Equal("Hello World! 2", await sut.GetScalarValue());
         }
     }
 }
